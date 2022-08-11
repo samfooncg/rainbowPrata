@@ -9,15 +9,3 @@ RUN cp /opt/acronis/var/aakore/reg.yml /opt/acronis/var/aakore/reg.yml.bak
 RUN cp /etc/Acronis/BackupAndRecovery.config /etc/Acronis/BackupAndRecovery.config.bak
 RUN touch DateCreated_`date +%d%b%Y`
 RUN rm CyberProtect_AgentForLinux_x86_64.bin 
-
-#COPY ./sampleconfig/BackupAndRecovery.config /etc/Acronis/BackupAndRecovery.config
-#COPY ./sampleconfig/reg.yml /opt/acronis/var/aakore/reg.yml
-
-#RUN service supervisor restart
-#RUN service supervisor start
-#RUN supervisorctl reread
-#RUN supervisor update
-
-#CMD ["/usr/bin/supervisord"]
-#ENTRYPOINT ["/usr/bin/supervisord"]
-#ENTRYPOINT ["/bin/bash"]
